@@ -1,0 +1,5 @@
+dataset/
+CNN_search/
+grid_search_dir/
+
+*.pyc
