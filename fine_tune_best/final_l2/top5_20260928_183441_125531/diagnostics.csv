@@ -1,0 +1,6 @@
+trial_id,history_source,continue_training,reason,accuracy_gain,loss_drop,train_val_gap
+18,Diagnostic continuation,True,Validation still improving,0.013532737890879276,0.015127897262573242,0.10363131761550903
+00,Diagnostic continuation,True,Validation still improving,0.0014244914054870605,0.003368556499481201,0.10912368694941199
+07,Diagnostic continuation,True,Validation still improving,0.003561258316040039,-0.001822054386138916,0.13131783405939734
+08,Diagnostic continuation,False,Validation plateau or deterioration,-0.0009496808052062988,-0.0052388707796732215,0.12788844108581543
+04,Diagnostic continuation,True,Validation still improving,0.005935410658518436,0.019262313842773438,0.12350509564081835

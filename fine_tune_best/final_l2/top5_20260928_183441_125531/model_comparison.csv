@@ -1,0 +1,6 @@
+trial_id,selected_model,l2,search_val_accuracy,checkpoint_path,history_path,extra_epochs,val_accuracy,val_loss,accuracy_improvement
+18,model_2,0.0003,0.8782051205635071,fine_tune_best/final_l2/top5_20260928_183441_125531/trial_18/best.keras,fine_tune_best/final_l2/top5_20260928_183441_125531/trial_18/continuation.csv,44,0.8803418874740601,0.6066418290138245,0.0021367669105529785
+00,model_0,0.0,0.87678062915802,fine_tune_best/final_l2/top5_20260928_183441_125531/trial_00/best.keras,fine_tune_best/final_l2/top5_20260928_183441_125531/trial_00/continuation.csv,26,0.87678062915802,0.3961310386657715,0.0
+04,model_0,0.0003,0.87321937084198,fine_tune_best/final_l2/top5_20260928_183441_125531/trial_04/best.keras,fine_tune_best/final_l2/top5_20260928_183441_125531/trial_04/continuation.csv,36,0.87678062915802,0.5348411798477173,0.003561258316040039
+07,model_1,0.0,0.8760683536529541,fine_tune_best/final_l2/top5_20260928_183441_125531/trial_07/best.keras,fine_tune_best/final_l2/top5_20260928_183441_125531/trial_07/continuation.csv,37,0.8760683536529541,0.4649942219257355,0.0
+08,model_1,1e-06,0.8739316463470459,fine_tune_best/final_l2/top5_20260928_183441_125531/trial_08/best.keras,fine_tune_best/final_l2/top5_20260928_183441_125531/trial_08/continuation.csv,10,0.875356137752533,0.4580649435520172,0.0014244914054870605
