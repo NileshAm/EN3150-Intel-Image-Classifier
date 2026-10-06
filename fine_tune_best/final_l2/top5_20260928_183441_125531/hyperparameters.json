@@ -1,0 +1,28 @@
+{
+  "learning_rate": 0.0017782794100389,
+  "drop_rate": 0.5,
+  "rotation": 0.0,
+  "zoom": 0.05,
+  "contrast": 0.1,
+  "translation": 0.0,
+  "architecture": 1,
+  "weights_path": "selected models/model_2/weights.weights.h5",
+  "trial_id": "18",
+  "selected_model": "model_2",
+  "l2": 0.0003,
+  "extra_epochs": 44,
+  "best_val_accuracy": 0.8803418874740601,
+  "search_val_accuracy": 0.8782051205635071,
+  "test_metrics": {
+    "accuracy": 0.8656666874885559,
+    "loss": 0.6944348216056824
+  },
+  "labels": [
+    "glacier",
+    "street",
+    "forest",
+    "sea",
+    "mountain",
+    "buildings"
+  ]
+}

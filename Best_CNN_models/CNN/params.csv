@@ -1,0 +1,7 @@
+name,model,param,loss,accuracy,learning_rate,drop_rate,metric
+model5,"<Sequential name=sequential, built=True>",<keras_tuner.src.engine.hyperparameters.hyperparameters.HyperParameters object at 0x7be20fdf4ad0>,0.5246388912200928,0.8103333115577698,0.00044668359215096327,0.1,accuracy
+model0,"<Sequential name=sequential, built=True>",<keras_tuner.src.engine.hyperparameters.hyperparameters.HyperParameters object at 0x7be20fd73410>,0.5680958032608032,0.8086666464805603,0.00044668359215096327,0.6000000000000001,accuracy
+model7,"<Sequential name=sequential, built=True>",<keras_tuner.src.engine.hyperparameters.hyperparameters.HyperParameters object at 0x7be20fd00350>,0.5548997521400452,0.8063333630561829,0.00044668359215096327,0.4,accuracy
+model1,"<Sequential name=sequential, built=True>",<keras_tuner.src.engine.hyperparameters.hyperparameters.HyperParameters object at 0x7be20fc306e0>,0.5618069171905518,0.8059999942779541,0.0008912509381337464,0.4,accuracy
+model2,"<Sequential name=sequential, built=True>",<keras_tuner.src.engine.hyperparameters.hyperparameters.HyperParameters object at 0x7be20fc1c290>,0.5835296511650085,0.8043333292007446,0.0008912509381337464,0.0,accuracy
+model8,"<Sequential name=sequential, built=True>",<keras_tuner.src.engine.hyperparameters.hyperparameters.HyperParameters object at 0x7be20fd7c890>,0.5868434309959412,0.8023333549499512,0.000223872113856834,0.0,accuracy

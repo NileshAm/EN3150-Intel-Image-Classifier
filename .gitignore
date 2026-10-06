@@ -1,5 +1,7 @@
 dataset/
 CNN_search/
 grid_search_dir/
+CNN_search_fine/
+CNN_search_final/
 
 *.pyc
