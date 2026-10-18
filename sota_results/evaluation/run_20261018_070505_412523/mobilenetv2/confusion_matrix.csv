@@ -1,0 +1,7 @@
+,buildings,forest,glacier,mountain,sea,street
+buildings,366,0,2,3,5,18
+forest,1,403,0,1,5,2
+glacier,1,4,365,51,23,0
+mountain,2,1,61,377,14,1
+sea,3,0,16,22,374,2
+street,48,5,3,2,4,371

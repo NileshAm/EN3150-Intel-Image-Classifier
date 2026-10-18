@@ -1,0 +1,20 @@
+{
+  "model": "Model B",
+  "test_images": 2556,
+  "test_accuracy": 0.8067292644757433,
+  "test_cross_entropy": 0.5553741455078125,
+  "macro_precision": 0.8059853112782308,
+  "macro_recall": 0.8082125864974349,
+  "macro_f1": 0.8065347148271464,
+  "weighted_f1": 0.8055507835896,
+  "total_parameters": 47169,
+  "trainable_parameters_at_export": 47169,
+  "model_size_KB": 230.49,
+  "model_size_MB": 0.23049,
+  "estimated_fp32_parameter_MB": 0.188676,
+  "median_inference_ms": 2.3060500006977236,
+  "p95_inference_ms": 3.3182550023411745,
+  "recorded_training_seconds_per_epoch": 7.518723910999252,
+  "provenance": "saved split fingerprints and label mapping match",
+  "source_checkpoint_sha256": "5266072d60b1d7f842321893e754afee55651d4bf669d9e90dcb9df1cf63fdd5"
+}

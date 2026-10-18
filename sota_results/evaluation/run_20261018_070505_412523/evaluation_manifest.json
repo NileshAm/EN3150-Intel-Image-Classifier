@@ -1,0 +1,165 @@
+{
+  "labels": [
+    "buildings",
+    "forest",
+    "glacier",
+    "mountain",
+    "sea",
+    "street"
+  ],
+  "split_fingerprints": {
+    "train": "54bb7f1ff49d8013b7b62f6977226c77c6f4fd6292ee911b1bb009036ce741ab",
+    "validation": "1390148e4c6eb6b74d89b27dfa829c64d5de95bdd7d7a8cc512db9db4967fd1f",
+    "test": "a2073ed201b6b352089ac066dbd1852fe04538b0ed71b761dd81a7a35b1126ff"
+  },
+  "test_images": 2556,
+  "evaluation_batch_size": 32,
+  "tensorflow": "2.21.0",
+  "python": "3.11.17",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "devices": [
+    "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+  ],
+  "latency_batch_size": 1,
+  "latency_warmup_calls": 10,
+  "latency_measured_calls": 100,
+  "latency_method": "tf.function; raw float32 RGB input; host tensor conversion and synchronized numpy output included",
+  "model_size_method": "actual uncompiled .keras archive; decimal KB/MB; no optimizer state",
+  "models": {
+    "Model A": {
+      "checkpoint": "sota_results\\model_a\\run_20261018_054434_115197\\model.keras",
+      "sha256": "ca42cf3c46b0a84d561af9af4d1fc94ea27fd153d0cc4834ac01019b37145579",
+      "provenance": "saved split fingerprints and label mapping match",
+      "training": {
+        "model": "Model A",
+        "training_completed": true,
+        "training_source": "model_a_section_training",
+        "best_epoch": 49,
+        "best_validation_accuracy": 0.8520547747612,
+        "validation_loss_at_best_epoch": 0.4667174220085144,
+        "epochs_completed": 100,
+        "total_parameters": 389958,
+        "trainable_parameters_at_export": 389958,
+        "mean_seconds_per_epoch": 30.20593641700023,
+        "total_epoch_seconds": 3020.593641700023,
+        "labels": [
+          "buildings",
+          "forest",
+          "glacier",
+          "mountain",
+          "sea",
+          "street"
+        ],
+        "split_fingerprints": {
+          "train": "54bb7f1ff49d8013b7b62f6977226c77c6f4fd6292ee911b1bb009036ce741ab",
+          "validation": "1390148e4c6eb6b74d89b27dfa829c64d5de95bdd7d7a8cc512db9db4967fd1f",
+          "test": "a2073ed201b6b352089ac066dbd1852fe04538b0ed71b761dd81a7a35b1126ff"
+        },
+        "checkpoint_sha256": "ca42cf3c46b0a84d561af9af4d1fc94ea27fd153d0cc4834ac01019b37145579",
+        "optimizer": "Adam",
+        "learning_rate": 0.0005000000237487257,
+        "batch_size": 64,
+        "seed": 42
+      }
+    },
+    "Model B": {
+      "checkpoint": "sota_results\\model_b\\run_20261017_232324_313606\\model.keras",
+      "sha256": "5266072d60b1d7f842321893e754afee55651d4bf669d9e90dcb9df1cf63fdd5",
+      "provenance": "saved split fingerprints and label mapping match",
+      "training": {
+        "model": "Model B",
+        "training_completed": true,
+        "training_source": "model_b_section_training",
+        "best_epoch": 97,
+        "best_validation_accuracy": 0.8046966791152954,
+        "validation_loss_at_best_epoch": 0.561314582824707,
+        "epochs_completed": 100,
+        "total_parameters": 47169,
+        "trainable_parameters_at_export": 47169,
+        "mean_seconds_per_epoch": 7.518723910999252,
+        "total_epoch_seconds": 751.8723910999252,
+        "labels": [
+          "buildings",
+          "forest",
+          "glacier",
+          "mountain",
+          "sea",
+          "street"
+        ],
+        "split_fingerprints": {
+          "train": "54bb7f1ff49d8013b7b62f6977226c77c6f4fd6292ee911b1bb009036ce741ab",
+          "validation": "1390148e4c6eb6b74d89b27dfa829c64d5de95bdd7d7a8cc512db9db4967fd1f",
+          "test": "a2073ed201b6b352089ac066dbd1852fe04538b0ed71b761dd81a7a35b1126ff"
+        },
+        "checkpoint_sha256": "5266072d60b1d7f842321893e754afee55651d4bf669d9e90dcb9df1cf63fdd5",
+        "optimizer": "Adam",
+        "learning_rate": 0.0005000000237487257,
+        "batch_size": 64,
+        "seed": 42,
+        "training_mode": "continuation_from_best_validation_checkpoint",
+        "source_run": "sota_results/model_b/run_20261017_230116_871766",
+        "source_checkpoint_epoch": 20,
+        "source_checkpoint_sha256": "dc0cfe0fc5bea141804826f23154c41c0570a45c9767cc0eed98c2d89a77aa14",
+        "initial_epochs_completed": 20,
+        "additional_epochs_completed": 80,
+        "continuation_mean_seconds_per_epoch": 8.250331613748859
+      }
+    },
+    "MobileNetV2": {
+      "checkpoint": "sota_results\\mobilenetv2\\run_20261014_205429_059776\\model.keras",
+      "sha256": "456823178ad533b4b9e2c8ff0569d9d39dde5a72d1a4c1fdae84226c03b8ca3a",
+      "provenance": "saved split fingerprints and label mapping match",
+      "training": {
+        "model": "MobileNetV2",
+        "selected_stage": "fine",
+        "best_validation_accuracy": 0.8735812306404114,
+        "epochs_completed": 20,
+        "total_parameters": 2265670,
+        "trainable_parameters_at_export": 1671046,
+        "mean_seconds_per_epoch": 56.489878620021045,
+        "total_epoch_seconds": 1129.797572400421,
+        "split_fingerprints": {
+          "train": "54bb7f1ff49d8013b7b62f6977226c77c6f4fd6292ee911b1bb009036ce741ab",
+          "validation": "1390148e4c6eb6b74d89b27dfa829c64d5de95bdd7d7a8cc512db9db4967fd1f",
+          "test": "a2073ed201b6b352089ac066dbd1852fe04538b0ed71b761dd81a7a35b1126ff"
+        },
+        "labels": [
+          "buildings",
+          "forest",
+          "glacier",
+          "mountain",
+          "sea",
+          "street"
+        ]
+      }
+    },
+    "EfficientNet-B0": {
+      "checkpoint": "sota_results\\efficientnetb0\\run_20261014_220322_598884\\model.keras",
+      "sha256": "6983b7eea8b717fb528fb0b85768bddbf1c52ee165205f12ad4efe11f44c5c44",
+      "provenance": "saved split fingerprints and label mapping match",
+      "training": {
+        "model": "EfficientNet-B0",
+        "selected_stage": "fine",
+        "best_validation_accuracy": 0.8888453841209412,
+        "epochs_completed": 20,
+        "total_parameters": 4057257,
+        "trainable_parameters_at_export": 2045206,
+        "mean_seconds_per_epoch": 94.70045749500278,
+        "total_epoch_seconds": 1894.0091499000555,
+        "split_fingerprints": {
+          "train": "54bb7f1ff49d8013b7b62f6977226c77c6f4fd6292ee911b1bb009036ce741ab",
+          "validation": "1390148e4c6eb6b74d89b27dfa829c64d5de95bdd7d7a8cc512db9db4967fd1f",
+          "test": "a2073ed201b6b352089ac066dbd1852fe04538b0ed71b761dd81a7a35b1126ff"
+        },
+        "labels": [
+          "buildings",
+          "forest",
+          "glacier",
+          "mountain",
+          "sea",
+          "street"
+        ]
+      }
+    }
+  }
+}

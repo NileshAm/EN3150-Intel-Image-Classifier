@@ -1,0 +1,23 @@
+{
+  "model": "EfficientNet-B0",
+  "selected_stage": "fine",
+  "best_validation_accuracy": 0.8888453841209412,
+  "epochs_completed": 20,
+  "total_parameters": 4057257,
+  "trainable_parameters_at_export": 2045206,
+  "mean_seconds_per_epoch": 1116.3909246950002,
+  "total_epoch_seconds": 22327.818493900006,
+  "split_fingerprints": {
+    "train": "54bb7f1ff49d8013b7b62f6977226c77c6f4fd6292ee911b1bb009036ce741ab",
+    "validation": "1390148e4c6eb6b74d89b27dfa829c64d5de95bdd7d7a8cc512db9db4967fd1f",
+    "test": "a2073ed201b6b352089ac066dbd1852fe04538b0ed71b761dd81a7a35b1126ff"
+  },
+  "labels": [
+    "buildings",
+    "forest",
+    "glacier",
+    "mountain",
+    "sea",
+    "street"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "model": "Model B",
+  "training_completed": true,
+  "training_source": "model_b_section_training",
+  "best_epoch": 97,
+  "best_validation_accuracy": 0.8046966791152954,
+  "validation_loss_at_best_epoch": 0.561314582824707,
+  "epochs_completed": 100,
+  "total_parameters": 47169,
+  "trainable_parameters_at_export": 47169,
+  "mean_seconds_per_epoch": 7.518723910999252,
+  "total_epoch_seconds": 751.8723910999252,
+  "labels": [
+    "buildings",
+    "forest",
+    "glacier",
+    "mountain",
+    "sea",
+    "street"
+  ],
+  "split_fingerprints": {
+    "train": "54bb7f1ff49d8013b7b62f6977226c77c6f4fd6292ee911b1bb009036ce741ab",
+    "validation": "1390148e4c6eb6b74d89b27dfa829c64d5de95bdd7d7a8cc512db9db4967fd1f",
+    "test": "a2073ed201b6b352089ac066dbd1852fe04538b0ed71b761dd81a7a35b1126ff"
+  },
+  "checkpoint_sha256": "5266072d60b1d7f842321893e754afee55651d4bf669d9e90dcb9df1cf63fdd5",
+  "optimizer": "Adam",
+  "learning_rate": 0.0005000000237487257,
+  "batch_size": 64,
+  "seed": 42,
+  "training_mode": "continuation_from_best_validation_checkpoint",
+  "source_run": "sota_results/model_b/run_20261017_230116_871766",
+  "source_checkpoint_epoch": 20,
+  "source_checkpoint_sha256": "dc0cfe0fc5bea141804826f23154c41c0570a45c9767cc0eed98c2d89a77aa14",
+  "initial_epochs_completed": 20,
+  "additional_epochs_completed": 80,
+  "continuation_mean_seconds_per_epoch": 8.250331613748859
+}

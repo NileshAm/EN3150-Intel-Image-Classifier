@@ -1,0 +1,20 @@
+{
+  "model": "MobileNetV2",
+  "test_images": 2556,
+  "test_accuracy": 0.8826291079812206,
+  "test_cross_entropy": 0.4150843918323517,
+  "macro_precision": 0.8850131926772905,
+  "macro_recall": 0.8849352058375491,
+  "macro_f1": 0.8844612755444565,
+  "weighted_f1": 0.8826681256664137,
+  "total_parameters": 2265670,
+  "trainable_parameters_at_export": 1671046,
+  "model_size_KB": 9648.824,
+  "model_size_MB": 9.648824,
+  "estimated_fp32_parameter_MB": 9.06268,
+  "median_inference_ms": 10.946349999358063,
+  "p95_inference_ms": 14.405130001978248,
+  "recorded_training_seconds_per_epoch": 56.489878620021045,
+  "provenance": "saved split fingerprints and label mapping match",
+  "source_checkpoint_sha256": "456823178ad533b4b9e2c8ff0569d9d39dde5a72d1a4c1fdae84226c03b8ca3a"
+}

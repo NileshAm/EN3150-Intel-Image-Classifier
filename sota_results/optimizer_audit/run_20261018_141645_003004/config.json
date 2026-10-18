@@ -1,0 +1,169 @@
+{
+  "epochs": 20,
+  "batch_size": 64,
+  "seed": 42,
+  "initialization": "variance_preserving_depthwise_pointwise",
+  "initialization_selection": "training-batch kernel gradient median, before optimizer trials",
+  "depthwise_stddev": 0.3333333333333333,
+  "pointwise_initializer": "HeNormal",
+  "labels": [
+    "buildings",
+    "forest",
+    "glacier",
+    "mountain",
+    "sea",
+    "street"
+  ],
+  "split_fingerprints": {
+    "train": "54bb7f1ff49d8013b7b62f6977226c77c6f4fd6292ee911b1bb009036ce741ab",
+    "validation": "1390148e4c6eb6b74d89b27dfa829c64d5de95bdd7d7a8cc512db9db4967fd1f"
+  },
+  "tensorflow": "2.21.0",
+  "initialization_probes": [
+    {
+      "initialization": "default_glorot",
+      "loss": 1.7917280197143555,
+      "kernel_gradient_median": 0.00027533562388271093,
+      "gradients": [
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d/depthwise_kernel",
+          "gradient_l2": 8.551809150958434e-05
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d/pointwise_kernel",
+          "gradient_l2": 0.0001990966557059437
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d/bias",
+          "gradient_l2": 8.791968139121309e-05
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_1/depthwise_kernel",
+          "gradient_l2": 0.00027533562388271093
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_1/pointwise_kernel",
+          "gradient_l2": 0.00018033571541309357
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_1/bias",
+          "gradient_l2": 0.0004581310786306858
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_2/depthwise_kernel",
+          "gradient_l2": 0.0004828905512113124
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_2/pointwise_kernel",
+          "gradient_l2": 0.00025919408653862774
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_2/bias",
+          "gradient_l2": 0.006705539766699076
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_3/depthwise_kernel",
+          "gradient_l2": 0.0006769655155949295
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_3/pointwise_kernel",
+          "gradient_l2": 0.0005011588800698519
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_3/bias",
+          "gradient_l2": 0.0989648774266243
+        },
+        {
+          "weight": "model_b_optimizer_audit/dense/kernel",
+          "gradient_l2": 0.0005058693932369351
+        },
+        {
+          "weight": "model_b_optimizer_audit/dense/bias",
+          "gradient_l2": 0.10972879081964493
+        }
+      ]
+    },
+    {
+      "initialization": "variance_preserving",
+      "loss": 1.9280388355255127,
+      "kernel_gradient_median": 0.539240300655365,
+      "gradients": [
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_4/depthwise_kernel",
+          "gradient_l2": 0.41010743379592896
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_4/pointwise_kernel",
+          "gradient_l2": 0.2356167882680893
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_4/bias",
+          "gradient_l2": 0.35526904463768005
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_5/depthwise_kernel",
+          "gradient_l2": 0.7307021021842957
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_5/pointwise_kernel",
+          "gradient_l2": 0.539240300655365
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_5/bias",
+          "gradient_l2": 0.40189114212989807
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_6/depthwise_kernel",
+          "gradient_l2": 0.3916398286819458
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_6/pointwise_kernel",
+          "gradient_l2": 0.6289244890213013
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_6/bias",
+          "gradient_l2": 0.24970807135105133
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_7/depthwise_kernel",
+          "gradient_l2": 0.3976590633392334
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_7/pointwise_kernel",
+          "gradient_l2": 0.9467032551765442
+        },
+        {
+          "weight": "model_b_optimizer_audit/separable_conv2d_7/bias",
+          "gradient_l2": 0.20096929371356964
+        },
+        {
+          "weight": "model_b_optimizer_audit/dense_1/kernel",
+          "gradient_l2": 1.477463960647583
+        },
+        {
+          "weight": "model_b_optimizer_audit/dense_1/bias",
+          "gradient_l2": 0.2134585678577423
+        }
+      ]
+    }
+  ],
+  "test_data_used": false,
+  "optimizers": [
+    {
+      "name": "Adam",
+      "learning_rate": 0.0005,
+      "momentum": null
+    },
+    {
+      "name": "SGD",
+      "learning_rate": 0.05,
+      "momentum": 0.0
+    },
+    {
+      "name": "SGD + momentum",
+      "learning_rate": 0.05,
+      "momentum": 0.9
+    }
+  ],
+  "initial_weights_sha256": "003928854ca40034e13189072372759a9a3286a80e26419bafc9b30dd6b64914"
+}

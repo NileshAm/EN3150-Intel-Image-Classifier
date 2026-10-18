@@ -1,0 +1,35 @@
+{
+  "seed": 42,
+  "input_shape": [
+    64,
+    64,
+    3
+  ],
+  "batch_size": 32,
+  "head_epochs": 5,
+  "fine_tune_epochs": 15,
+  "head_learning_rate": 0.001,
+  "fine_tune_learning_rate": 1e-05,
+  "fine_tune_last_layers": 40,
+  "dropout": 0.3,
+  "pretrained_weights": "imagenet",
+  "preprocessing": "built-in; raw RGB [0, 255]",
+  "labels": [
+    "buildings",
+    "forest",
+    "glacier",
+    "mountain",
+    "sea",
+    "street"
+  ],
+  "split_fingerprints": {
+    "train": "54bb7f1ff49d8013b7b62f6977226c77c6f4fd6292ee911b1bb009036ce741ab",
+    "validation": "1390148e4c6eb6b74d89b27dfa829c64d5de95bdd7d7a8cc512db9db4967fd1f",
+    "test": "a2073ed201b6b352089ac066dbd1852fe04538b0ed71b761dd81a7a35b1126ff"
+  },
+  "tensorflow": "2.21.0",
+  "python": "3.11.17",
+  "devices": [
+    "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "model": "EfficientNet-B0",
+  "test_images": 2556,
+  "test_accuracy": 0.8892801251956182,
+  "test_cross_entropy": 0.3159607946872711,
+  "macro_precision": 0.8914363515601024,
+  "macro_recall": 0.8910315097552283,
+  "macro_f1": 0.8911679975366291,
+  "weighted_f1": 0.8892832596194358,
+  "total_parameters": 4057257,
+  "trainable_parameters_at_export": 2045206,
+  "model_size_KB": 17068.169,
+  "model_size_MB": 17.068169,
+  "estimated_fp32_parameter_MB": 16.229028,
+  "median_inference_ms": 41.594500000428525,
+  "p95_inference_ms": 52.986274997419955,
+  "recorded_training_seconds_per_epoch": 94.70045749500278,
+  "provenance": "saved split fingerprints and label mapping match",
+  "source_checkpoint_sha256": "6983b7eea8b717fb528fb0b85768bddbf1c52ee165205f12ad4efe11f44c5c44"
+}

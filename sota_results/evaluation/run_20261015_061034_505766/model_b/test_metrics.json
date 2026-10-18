@@ -1,0 +1,20 @@
+{
+  "model": "Model B",
+  "test_images": 2556,
+  "test_accuracy": 0.704225352112676,
+  "test_cross_entropy": 0.7925075888633728,
+  "macro_precision": 0.7181406121081274,
+  "macro_recall": 0.7070361375561042,
+  "macro_f1": 0.7068956764542947,
+  "weighted_f1": 0.7062571592980269,
+  "total_parameters": 47169,
+  "trainable_parameters_at_export": 47169,
+  "model_size_KB": 230.496,
+  "model_size_MB": 0.230496,
+  "estimated_fp32_parameter_MB": 0.188676,
+  "median_inference_ms": 9.210449934471399,
+  "p95_inference_ms": 16.187875054311007,
+  "recorded_training_seconds_per_epoch": 19.131472204992317,
+  "provenance": "PROVISIONAL: training split and label mapping not independently verified",
+  "source_checkpoint_sha256": "fed3460c889df15361cdec4c96dfce1fd15b292737242be88fc2e906caba2413"
+}

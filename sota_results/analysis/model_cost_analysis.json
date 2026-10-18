@@ -1,0 +1,812 @@
+{
+  "method": "Static convolution/dense layer-shape MAC count; batch 1; 64x64 RGB; auxiliary operators excluded.",
+  "memory_method": "Largest single logical FP32 output, not peak runtime memory.",
+  "tensorflow": "2.21.0",
+  "models": {
+    "Model A": {
+      "convolution_dense_macs": 37307904,
+      "largest_single_output_tensor": {
+        "layer": "conv2d",
+        "shape": [
+          64,
+          64,
+          32
+        ],
+        "fp32_bytes": 524288
+      },
+      "counted_layers": [
+        {
+          "layer": "conv2d",
+          "type": "Conv2D",
+          "macs": 3538944
+        },
+        {
+          "layer": "conv2d_1",
+          "type": "Conv2D",
+          "macs": 16588800
+        },
+        {
+          "layer": "conv2d_2",
+          "type": "Conv2D",
+          "macs": 12460032
+        },
+        {
+          "layer": "conv2d_3",
+          "type": "Conv2D",
+          "macs": 4718592
+        },
+        {
+          "layer": "dense",
+          "type": "Dense",
+          "macs": 1536
+        }
+      ],
+      "checkpoint_sha256": "ca42cf3c46b0a84d561af9af4d1fc94ea27fd153d0cc4834ac01019b37145579",
+      "input_shape": [
+        64,
+        64,
+        3
+      ]
+    },
+    "Model B": {
+      "convolution_dense_macs": 4632256,
+      "largest_single_output_tensor": {
+        "layer": "separable_conv2d_4",
+        "shape": [
+          64,
+          64,
+          32
+        ],
+        "fp32_bytes": 524288
+      },
+      "counted_layers": [
+        {
+          "layer": "separable_conv2d_4",
+          "type": "SeparableConv2D",
+          "macs": 503808
+        },
+        {
+          "layer": "separable_conv2d_5",
+          "type": "SeparableConv2D",
+          "macs": 2102400
+        },
+        {
+          "layer": "separable_conv2d_6",
+          "type": "SeparableConv2D",
+          "macs": 1481792
+        },
+        {
+          "layer": "separable_conv2d_7",
+          "type": "SeparableConv2D",
+          "macs": 542720
+        },
+        {
+          "layer": "dense",
+          "type": "Dense",
+          "macs": 1536
+        }
+      ],
+      "checkpoint_sha256": "5266072d60b1d7f842321893e754afee55651d4bf669d9e90dcb9df1cf63fdd5",
+      "input_shape": [
+        64,
+        64,
+        3
+      ]
+    },
+    "MobileNetV2": {
+      "convolution_dense_macs": 24456192,
+      "largest_single_output_tensor": {
+        "layer": "mobilenetv2_1.00_224/block_1_pad",
+        "shape": [
+          33,
+          33,
+          96
+        ],
+        "fp32_bytes": 418176
+      },
+      "counted_layers": [
+        {
+          "layer": "mobilenetv2_1.00_224/Conv1",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/expanded_conv_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 294912
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/expanded_conv_project",
+          "type": "Conv2D",
+          "macs": 524288
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_1_expand",
+          "type": "Conv2D",
+          "macs": 1572864
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_1_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 221184
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_1_project",
+          "type": "Conv2D",
+          "macs": 589824
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_2_expand",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_2_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 331776
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_2_project",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_3_expand",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_3_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 82944
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_3_project",
+          "type": "Conv2D",
+          "macs": 294912
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_4_expand",
+          "type": "Conv2D",
+          "macs": 393216
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_4_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 110592
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_4_project",
+          "type": "Conv2D",
+          "macs": 393216
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_5_expand",
+          "type": "Conv2D",
+          "macs": 393216
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_5_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 110592
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_5_project",
+          "type": "Conv2D",
+          "macs": 393216
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_6_expand",
+          "type": "Conv2D",
+          "macs": 393216
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_6_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 27648
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_6_project",
+          "type": "Conv2D",
+          "macs": 196608
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_7_expand",
+          "type": "Conv2D",
+          "macs": 393216
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_7_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 55296
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_7_project",
+          "type": "Conv2D",
+          "macs": 393216
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_8_expand",
+          "type": "Conv2D",
+          "macs": 393216
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_8_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 55296
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_8_project",
+          "type": "Conv2D",
+          "macs": 393216
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_9_expand",
+          "type": "Conv2D",
+          "macs": 393216
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_9_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 55296
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_9_project",
+          "type": "Conv2D",
+          "macs": 393216
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_10_expand",
+          "type": "Conv2D",
+          "macs": 393216
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_10_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 55296
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_10_project",
+          "type": "Conv2D",
+          "macs": 589824
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_11_expand",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_11_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 82944
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_11_project",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_12_expand",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_12_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 82944
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_12_project",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_13_expand",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_13_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 20736
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_13_project",
+          "type": "Conv2D",
+          "macs": 368640
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_14_expand",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_14_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 34560
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_14_project",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_15_expand",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_15_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 34560
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_15_project",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_16_expand",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_16_depthwise",
+          "type": "DepthwiseConv2D",
+          "macs": 34560
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/block_16_project",
+          "type": "Conv2D",
+          "macs": 1228800
+        },
+        {
+          "layer": "mobilenetv2_1.00_224/Conv_1",
+          "type": "Conv2D",
+          "macs": 1638400
+        },
+        {
+          "layer": "scene_classifier",
+          "type": "Dense",
+          "macs": 7680
+        }
+      ],
+      "checkpoint_sha256": "456823178ad533b4b9e2c8ff0569d9d39dde5a72d1a4c1fdae84226c03b8ca3a",
+      "input_shape": [
+        64,
+        64,
+        3
+      ]
+    },
+    "EfficientNet-B0": {
+      "convolution_dense_macs": 31974272,
+      "largest_single_output_tensor": {
+        "layer": "efficientnetb0/block2a_dwconv_pad",
+        "shape": [
+          33,
+          33,
+          96
+        ],
+        "fp32_bytes": 418176
+      },
+      "counted_layers": [
+        {
+          "layer": "efficientnetb0/stem_conv",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "efficientnetb0/block1a_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 294912
+        },
+        {
+          "layer": "efficientnetb0/block1a_se_reduce",
+          "type": "Conv2D",
+          "macs": 256
+        },
+        {
+          "layer": "efficientnetb0/block1a_se_expand",
+          "type": "Conv2D",
+          "macs": 256
+        },
+        {
+          "layer": "efficientnetb0/block1a_project_conv",
+          "type": "Conv2D",
+          "macs": 524288
+        },
+        {
+          "layer": "efficientnetb0/block2a_expand_conv",
+          "type": "Conv2D",
+          "macs": 1572864
+        },
+        {
+          "layer": "efficientnetb0/block2a_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 221184
+        },
+        {
+          "layer": "efficientnetb0/block2a_se_reduce",
+          "type": "Conv2D",
+          "macs": 384
+        },
+        {
+          "layer": "efficientnetb0/block2a_se_expand",
+          "type": "Conv2D",
+          "macs": 384
+        },
+        {
+          "layer": "efficientnetb0/block2a_project_conv",
+          "type": "Conv2D",
+          "macs": 589824
+        },
+        {
+          "layer": "efficientnetb0/block2b_expand_conv",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "efficientnetb0/block2b_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 331776
+        },
+        {
+          "layer": "efficientnetb0/block2b_se_reduce",
+          "type": "Conv2D",
+          "macs": 864
+        },
+        {
+          "layer": "efficientnetb0/block2b_se_expand",
+          "type": "Conv2D",
+          "macs": 864
+        },
+        {
+          "layer": "efficientnetb0/block2b_project_conv",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "efficientnetb0/block3a_expand_conv",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "efficientnetb0/block3a_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 230400
+        },
+        {
+          "layer": "efficientnetb0/block3a_se_reduce",
+          "type": "Conv2D",
+          "macs": 864
+        },
+        {
+          "layer": "efficientnetb0/block3a_se_expand",
+          "type": "Conv2D",
+          "macs": 864
+        },
+        {
+          "layer": "efficientnetb0/block3a_project_conv",
+          "type": "Conv2D",
+          "macs": 368640
+        },
+        {
+          "layer": "efficientnetb0/block3b_expand_conv",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "efficientnetb0/block3b_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 384000
+        },
+        {
+          "layer": "efficientnetb0/block3b_se_reduce",
+          "type": "Conv2D",
+          "macs": 2400
+        },
+        {
+          "layer": "efficientnetb0/block3b_se_expand",
+          "type": "Conv2D",
+          "macs": 2400
+        },
+        {
+          "layer": "efficientnetb0/block3b_project_conv",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "efficientnetb0/block4a_expand_conv",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "efficientnetb0/block4a_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 34560
+        },
+        {
+          "layer": "efficientnetb0/block4a_se_reduce",
+          "type": "Conv2D",
+          "macs": 2400
+        },
+        {
+          "layer": "efficientnetb0/block4a_se_expand",
+          "type": "Conv2D",
+          "macs": 2400
+        },
+        {
+          "layer": "efficientnetb0/block4a_project_conv",
+          "type": "Conv2D",
+          "macs": 307200
+        },
+        {
+          "layer": "efficientnetb0/block4b_expand_conv",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "efficientnetb0/block4b_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 69120
+        },
+        {
+          "layer": "efficientnetb0/block4b_se_reduce",
+          "type": "Conv2D",
+          "macs": 9600
+        },
+        {
+          "layer": "efficientnetb0/block4b_se_expand",
+          "type": "Conv2D",
+          "macs": 9600
+        },
+        {
+          "layer": "efficientnetb0/block4b_project_conv",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "efficientnetb0/block4c_expand_conv",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "efficientnetb0/block4c_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 69120
+        },
+        {
+          "layer": "efficientnetb0/block4c_se_reduce",
+          "type": "Conv2D",
+          "macs": 9600
+        },
+        {
+          "layer": "efficientnetb0/block4c_se_expand",
+          "type": "Conv2D",
+          "macs": 9600
+        },
+        {
+          "layer": "efficientnetb0/block4c_project_conv",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "efficientnetb0/block5a_expand_conv",
+          "type": "Conv2D",
+          "macs": 614400
+        },
+        {
+          "layer": "efficientnetb0/block5a_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 192000
+        },
+        {
+          "layer": "efficientnetb0/block5a_se_reduce",
+          "type": "Conv2D",
+          "macs": 9600
+        },
+        {
+          "layer": "efficientnetb0/block5a_se_expand",
+          "type": "Conv2D",
+          "macs": 9600
+        },
+        {
+          "layer": "efficientnetb0/block5a_project_conv",
+          "type": "Conv2D",
+          "macs": 860160
+        },
+        {
+          "layer": "efficientnetb0/block5b_expand_conv",
+          "type": "Conv2D",
+          "macs": 1204224
+        },
+        {
+          "layer": "efficientnetb0/block5b_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 268800
+        },
+        {
+          "layer": "efficientnetb0/block5b_se_reduce",
+          "type": "Conv2D",
+          "macs": 18816
+        },
+        {
+          "layer": "efficientnetb0/block5b_se_expand",
+          "type": "Conv2D",
+          "macs": 18816
+        },
+        {
+          "layer": "efficientnetb0/block5b_project_conv",
+          "type": "Conv2D",
+          "macs": 1204224
+        },
+        {
+          "layer": "efficientnetb0/block5c_expand_conv",
+          "type": "Conv2D",
+          "macs": 1204224
+        },
+        {
+          "layer": "efficientnetb0/block5c_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 268800
+        },
+        {
+          "layer": "efficientnetb0/block5c_se_reduce",
+          "type": "Conv2D",
+          "macs": 18816
+        },
+        {
+          "layer": "efficientnetb0/block5c_se_expand",
+          "type": "Conv2D",
+          "macs": 18816
+        },
+        {
+          "layer": "efficientnetb0/block5c_project_conv",
+          "type": "Conv2D",
+          "macs": 1204224
+        },
+        {
+          "layer": "efficientnetb0/block6a_expand_conv",
+          "type": "Conv2D",
+          "macs": 1204224
+        },
+        {
+          "layer": "efficientnetb0/block6a_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 67200
+        },
+        {
+          "layer": "efficientnetb0/block6a_se_reduce",
+          "type": "Conv2D",
+          "macs": 18816
+        },
+        {
+          "layer": "efficientnetb0/block6a_se_expand",
+          "type": "Conv2D",
+          "macs": 18816
+        },
+        {
+          "layer": "efficientnetb0/block6a_project_conv",
+          "type": "Conv2D",
+          "macs": 516096
+        },
+        {
+          "layer": "efficientnetb0/block6b_expand_conv",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "efficientnetb0/block6b_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 115200
+        },
+        {
+          "layer": "efficientnetb0/block6b_se_reduce",
+          "type": "Conv2D",
+          "macs": 55296
+        },
+        {
+          "layer": "efficientnetb0/block6b_se_expand",
+          "type": "Conv2D",
+          "macs": 55296
+        },
+        {
+          "layer": "efficientnetb0/block6b_project_conv",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "efficientnetb0/block6c_expand_conv",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "efficientnetb0/block6c_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 115200
+        },
+        {
+          "layer": "efficientnetb0/block6c_se_reduce",
+          "type": "Conv2D",
+          "macs": 55296
+        },
+        {
+          "layer": "efficientnetb0/block6c_se_expand",
+          "type": "Conv2D",
+          "macs": 55296
+        },
+        {
+          "layer": "efficientnetb0/block6c_project_conv",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "efficientnetb0/block6d_expand_conv",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "efficientnetb0/block6d_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 115200
+        },
+        {
+          "layer": "efficientnetb0/block6d_se_reduce",
+          "type": "Conv2D",
+          "macs": 55296
+        },
+        {
+          "layer": "efficientnetb0/block6d_se_expand",
+          "type": "Conv2D",
+          "macs": 55296
+        },
+        {
+          "layer": "efficientnetb0/block6d_project_conv",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "efficientnetb0/block7a_expand_conv",
+          "type": "Conv2D",
+          "macs": 884736
+        },
+        {
+          "layer": "efficientnetb0/block7a_dwconv",
+          "type": "DepthwiseConv2D",
+          "macs": 41472
+        },
+        {
+          "layer": "efficientnetb0/block7a_se_reduce",
+          "type": "Conv2D",
+          "macs": 55296
+        },
+        {
+          "layer": "efficientnetb0/block7a_se_expand",
+          "type": "Conv2D",
+          "macs": 55296
+        },
+        {
+          "layer": "efficientnetb0/block7a_project_conv",
+          "type": "Conv2D",
+          "macs": 1474560
+        },
+        {
+          "layer": "efficientnetb0/top_conv",
+          "type": "Conv2D",
+          "macs": 1638400
+        },
+        {
+          "layer": "scene_classifier",
+          "type": "Dense",
+          "macs": 7680
+        }
+      ],
+      "checkpoint_sha256": "6983b7eea8b717fb528fb0b85768bddbf1c52ee165205f12ad4efe11f44c5c44",
+      "input_shape": [
+        64,
+        64,
+        3
+      ]
+    }
+  }
+}
